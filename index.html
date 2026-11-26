@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#138344"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>LM Pizza</title></head><body><header><div class="logo">🍕 LM PIZZA</div><small>Seu pedido, do nosso forno até você</small></header>
+<main>
+<section class="hero"><h1>Peça sua pizza!</h1><p>Verde, vermelho e branco. Sabor que chega até você.</p></section>
+<section class="panel"><h2>Entrar / identificar cliente</h2><input id="email" type="email" placeholder="Seu e-mail"><input id="password" type="password" placeholder="Sua senha">
+<div class="actions"><button id="login">Entrar</button><button class="secondary" id="register">Criar conta</button><button class="light" id="logout">Sair</button></div><p id="authStatus" class="muted">Entre para fazer e acompanhar pedidos.</p></section>
+<section class="panel"><h2>Cardápio</h2><p class="muted">Preços das pizzas conforme o projeto LM Pizza.</p>
+<div class="product"><div><b>Pizza grande</b><small>Escolha o sabor no campo de observações</small></div><strong>R$ 40,00</strong><button data-name="Pizza grande" data-price="40">Adicionar</button></div>
+<div class="product"><div><b>Pizza média</b><small>Escolha o sabor no campo de observações</small></div><strong>R$ 20,00</strong><button data-name="Pizza média" data-price="20">Adicionar</button></div>
+<div class="product"><div><b>Pizza brotinho</b><small>Escolha o sabor no campo de observações</small></div><strong>R$ 10,00</strong><button data-name="Pizza brotinho" data-price="10">Adicionar</button></div>
+<h3>Bebidas</h3><div id="drinks"></div></section>
+<section class="panel"><h2>Seu carrinho</h2><div id="cart">Nenhum item adicionado.</div><input id="address" placeholder="Endereço completo para entrega"><input id="notes" placeholder="Sabor / observações do pedido">
+<button id="placeOrder">Confirmar pedido</button><p class="muted" id="orderMessage">O código secreto será mostrado somente nesta conta.</p></section>
+<section class="panel"><h2>Meus pedidos</h2><div id="orders">Entre para consultar seus pedidos.</div></section>
+</main><footer>LM PIZZA • Obrigado pela preferência!</footer><script type="module" src="app.js"></script></body></html>
